@@ -11,10 +11,6 @@ permissions:
 jobs:
   generate-profile-cards:
     runs-on: ubuntu-latest
-    strategy:
-      max-parallel: 1
-      matrix:
-        theme: [github, github_dark]
 
     steps:
       - name: Check out profile repository
@@ -28,5 +24,4 @@ jobs:
           USERNAME: asalavaty
           BRANCH_NAME: main
           UTC_OFFSET: 10
-          THEME: ${{ matrix.theme }}
           AUTO_PUSH: true
