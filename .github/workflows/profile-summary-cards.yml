@@ -1,1 +1,32 @@
+name: Update GitHub profile cards
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-profile-cards:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+      matrix:
+        theme: [github, github_dark]
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+        with:
+          USERNAME: asalavaty
+          BRANCH_NAME: main
+          UTC_OFFSET: 10
+          THEME: ${{ matrix.theme }}
+          AUTO_PUSH: true
