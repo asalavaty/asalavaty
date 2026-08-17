@@ -152,17 +152,19 @@ multi-omics & AI
 
 ## GitHub analytics
 
+The summary cards below are generated automatically inside this profile repository, so they do not depend on the rate-limited public `github-readme-stats` endpoint.
+
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=asalavaty&show_icons=true&hide_border=true&rank_icon=github&theme=github_dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=asalavaty&show_icons=true&hide_border=true&rank_icon=github&theme=default">
-    <img height="165" alt="Adrian Salavaty GitHub stats" src="https://github-readme-stats.vercel.app/api?username=asalavaty&show_icons=true&hide_border=true&rank_icon=github">
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/3-stats.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/github/3-stats.svg">
+    <img width="390" alt="Adrian Salavaty GitHub stats" src="./profile-summary-card-output/github/3-stats.svg">
   </picture>
   &nbsp;
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=asalavaty&layout=compact&hide_border=true&langs_count=8&theme=github_dark">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=asalavaty&layout=compact&hide_border=true&langs_count=8&theme=default">
-    <img height="165" alt="Adrian Salavaty top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=asalavaty&layout=compact&hide_border=true&langs_count=8">
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/1-repos-per-language.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/github/1-repos-per-language.svg">
+    <img width="390" alt="Adrian Salavaty languages by repository" src="./profile-summary-card-output/github/1-repos-per-language.svg">
   </picture>
 </p>
 
@@ -173,7 +175,6 @@ multi-omics & AI
     <img alt="Adrian Salavaty GitHub contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=asalavaty&bg_color=ffffff&color=334155&line=6d28d9&point=176987&area=true&hide_border=true">
   </picture>
 </p>
-
 ---
 
 ## Selected publications & research
